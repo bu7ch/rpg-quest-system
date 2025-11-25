@@ -1,0 +1,69 @@
+.quest-journal {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .loading-container {
+    text-align: center;
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 500px;
+  }
+  
+  .quests-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+  }
+  
+  .quest-card, .active-quest-card {
+    padding: 20px;
+    transition: transform 0.2s ease;
+  }
+  
+  .quest-card:hover {
+    transform: translateY(-2px);
+  }
+  
+  .quest-meta {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+    flex-wrap: wrap;
+  }
+  
+  .quest-description {
+    margin: 15px 0;
+    line-height: 1.5;
+  }
+  
+  .quest-progress {
+    margin-top: 15px;
+  }
+  
+  .player-info {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .rpg-error {
+    background-color: #ff4757 !important;
+    color: white !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .quests-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .quest-meta {
+      justify-content: center;
+    }
+  }

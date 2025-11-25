@@ -1,0 +1,46 @@
+/* Import NES.css et notre thème */
+@import './NesAdapter.css';
+
+/* Layout global */
+#root {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Composants custom */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 500px;
+}
+
+.navbar {
+  display: flex !important;
+  gap: 10px !important;
+  flex-wrap: wrap !important;
+}
+
+.quest-card, .active-quest-card, .inventory-item {
+  margin-bottom: 15px !important;
+}
+
+.quest-meta {
+  display: flex;
+  gap: 20px;
+  margin: 10px 0;
+  font-size: 9px;
+  color: #aaa;
+}
+
+.rpg-error {
+  color: var(--rpg-red) !important;
+  text-shadow: var(--pixel-size) var(--pixel-size) 0 var(--rpg-black);
+  margin: 10px 0;
+}

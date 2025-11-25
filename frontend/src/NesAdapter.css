@@ -1,0 +1,132 @@
+/* Import NES.css */
+@import 'nes.css/css/nes-core.min.css';
+
+/* Police rétro NES */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* Variables de thème RPG */
+:root {
+  --rpg-black: #0f0f0f;
+  --rpg-dark-blue: #1a1a2e;
+  --rpg-purple: #16213e;
+  --rpg-gold: #ffd700;
+  --rpg-green: #4caf50;
+  --rpg-red: #e94560;
+  --rpg-blue: #0f3460;
+  --pixel-size: 2px;
+}
+
+/* Base */
+body {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 10px;
+  background: var(--rpg-dark-blue);
+  color: white;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+  padding: 20px;
+}
+
+/* Container NES */
+.nes-container {
+  background: var(--rpg-purple) !important;
+  border-color: var(--rpg-gold) !important;
+  margin-bottom: 20px !important;
+}
+
+.nes-container.with-title > .title {
+  background: var(--rpg-gold) !important;
+  color: var(--rpg-black) !important;
+  padding: 5px 10px !important;
+  font-size: 12px !important;
+}
+
+/* Boutons NES */
+.nes-btn {
+  font-family: 'Press Start 2P', cursive !important;
+  font-size: 10px !important;
+  margin: 5px !important;
+}
+
+.nes-btn.is-primary {
+  background: var(--rpg-blue) !important;
+  color: white !important;
+}
+
+.nes-btn.is-success {
+  background: var(--rpg-green) !important;
+  color: white !important;
+}
+
+.nes-btn.is-error {
+  background: var(--rpg-red) !important;
+  color: white !important;
+}
+
+.nes-btn.is-disabled {
+  background: #666 !important;
+  color: #999 !important;
+  cursor: not-allowed !important;
+}
+
+/* Inputs */
+.nes-input, .nes-textarea, .nes-select {
+  font-family: 'Press Start 2P', cursive !important;
+  font-size: 10px !important;
+  background: var(--rpg-black) !important;
+  color: white !important;
+  border-color: var(--rpg-gold) !important;
+}
+
+/* Fieldset */
+.nes-fieldset {
+  border-color: var(--rpg-gold) !important;
+}
+
+.nes-legend {
+  color: var(--rpg-gold) !important;
+  font-size: 12px !important;
+  padding: 0 10px !important;
+}
+
+/* Table */
+.nes-table {
+  border-color: var(--rpg-gold) !important;
+  background: var(--rpg-purple) !important;
+}
+
+.nes-table th {
+  background: var(--rpg-blue) !important;
+  color: var(--rpg-gold) !important;
+}
+
+/* Progress (XP, Santé) */
+.nes-progress {
+  border: var(--pixel-size) solid var(--rpg-gold) !important;
+}
+
+/* Avatar (icônes 8-bit) */
+.nes-avatar {
+  border: var(--pixel-size) solid var(--rpg-gold) !important;
+}
+
+/* Message box */
+.nes-balloon {
+  background: var(--rpg-purple) !important;
+  border-color: var(--rpg-gold) !important;
+}
+
+/* Pokéball-like icons */
+.icon::before {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.icon.quest::before { content: "📜"; }
+.icon.xp::before { content: "⭐"; }
+.icon.health::before { content: "❤️"; }
+.icon.inventory::before { content: "🎒"; }
